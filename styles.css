@@ -1,0 +1,161 @@
+:root{
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    max-width: 1440px;
+    height: auto;
+    background-color: var(--very-dark-blue);
+
+}
+
+.container{
+    width: 900px;
+    height: auto;
+    background-color: var(--dark-desaturated-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20% auto;
+    border-radius: 20px;
+}
+
+.titles-section{
+    width: 430px;
+    padding: 40px;
+}
+
+.main-title{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+}
+
+.main-description{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--slightly-transparent-white);
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.purple-word{
+    color: var(--soft-violet);
+}
+
+.digits{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.white-digits{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 1.2rem;
+
+}
+
+.desk{
+    color: var(--slightly-transparent-white);
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.6rem;
+
+}
+
+.pic-section{
+    position: relative;
+    width: 430px;
+    border-radius:0 20px 20px 0;
+   
+}
+
+.pic-section-img{
+    width: 430px;
+    height: auto; 
+    border-radius: 0 20px 20px 0;        
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:hsl(277, 64%, 61%, 0.6) ;
+    z-index: 2;
+    border-radius: 0 20px 20px 0;
+}
+
+@media(max-width: 678px){
+    body{
+        width: 100%;
+
+    }
+
+    .container{
+        display: flex;
+        width: 375px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content:center;
+        margin: 20% auto;
+    }
+
+    .pic-section{
+        width: 375px;
+        
+
+    }
+
+    .pic-section-img, .overlay{
+        width: 375px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .titles-section{
+        width: 375px;
+
+    }
+
+    .titles1{
+        padding: 20px;
+        text-align: center;
+    }
+
+    .digits{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .white-digits{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
